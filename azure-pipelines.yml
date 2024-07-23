@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
   name: 'Default'
+  demands:
+    - maven
+    - Agent.Version -gt 2.163.1
 
 steps:
 - task: Maven@3

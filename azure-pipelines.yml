@@ -11,8 +11,7 @@ pool:
   name: 'Default'
   demands:
     - maven
-    - Agent.Version -gt 2.163.1
-
+   
 steps:
 - task: Maven@3
   inputs:
